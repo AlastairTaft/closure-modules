@@ -1,0 +1,1 @@
+java -jar ../compiler.jar --js C:\projects\closure-library\closure\goog --js fruit.js --js choco.js --module com:auto: --module f:1:com: --modulec:1:com: --only_closure_dependencies --closure_entry_point Choco --closure_entry_point Fruit --compilation_level=ADVANCED --externs module-externs.js

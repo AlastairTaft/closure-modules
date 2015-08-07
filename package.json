@@ -1,0 +1,29 @@
+{
+  "name": "closure-modules",
+  "version": "0.0.0",
+  "description": "Easy way to separate your closure library style code into compiled asset files that can be loaded individually.",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "alastair@fleep.io",
+  "license": "ISC",
+  "bin": {
+    "generate-closure-modules": "generate-closure-modules.js"
+  },
+  "devDependencies": {
+    "debug": "^2.2.0"
+  },
+  "keyworks": ["closure-compiler", "closure-library"],
+  "bugs": {
+    "url": "https://github.com/AlastairTaft/closure-modules/issues",
+    "email": "alastair@fleep.io"
+  },
+  "author": {
+    "name": "Alastair",
+    "email": "alastair@fleep.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlastairTaft/closure-modules.git"
+  },
+}

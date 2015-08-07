@@ -1,0 +1,1 @@
+function g(){console.log("New instance of Fruit created")}g.prototype.b=function(){e(["Apple","Banana","Orange"],function(a){console.log(a)})};g.prototype.a=function(){var a;a:{a={test:"Pear"};for(var c in a){a=c;break a}a=void 0}console.log(a)};module.exports=g;g.prototype.logSampleFruits=g.prototype.b;g.prototype.logRandomSample=g.prototype.a;

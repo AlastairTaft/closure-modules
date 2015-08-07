@@ -1,0 +1,1 @@
+function k(){console.log("New instance of Choco created")}k.prototype.a=function(){e(["mars","snickers","bounty"],function(a){console.log(a)})};module.exports=k;k.prototype.logSampleChocos=k.prototype.a;
