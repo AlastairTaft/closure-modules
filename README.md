@@ -21,8 +21,8 @@ Stick your module configuration in your package.json under a `"closure-modules"`
   ],
   // Configure your modules, name them as the key and put the script filepath as the value
   "modules": {
-    "claimsProduct": "closureModules/raw/claimsProduct/claims-product.js"
-    , "testPage": "closureModules/raw/test-page.js"
+    "claimsProduct": "closureModules/raw/claimsProduct/claims-product.js",
+    "testPage": "closureModules/raw/test-page.js"
   },
   // Any externs
   "externs": ["closureModules/raw/claimsProduct/claims-product-externs.js"],
@@ -59,6 +59,6 @@ A lightweight function `loadModule` gets included in the common code. Somewhere 
 
 ```
 <script type="text/JavaScript">
-  loadModule('claimsProduct.js')
+  loadModule('claimsProduct')
 </script>
 ```
