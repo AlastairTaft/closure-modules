@@ -59,6 +59,9 @@ A lightweight function `loadModule` gets included in the common code. Somewhere 
 
 ```
 <script type="text/JavaScript">
-  loadModule('claimsProduct')
+  loadModule('claimsProduct', function(){
+    // Callback fired when script has been loaded
+    claimsProduct.init()
+  })
 </script>
 ```
