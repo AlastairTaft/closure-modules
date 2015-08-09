@@ -1,6 +1,6 @@
 {
   "name": "closure-modules",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Easy way to separate your closure library style code into compiled asset files that can be loaded individually.",
   "main": "index.js",
   "scripts": {},
