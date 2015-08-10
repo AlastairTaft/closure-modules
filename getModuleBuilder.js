@@ -23,6 +23,7 @@ module.exports = function(){
     , modules = options['modules']
     , externs = options['externs'] || []
     , virtualDir = options['virtual-dir']
+    , useTypesForOptimisation = options['use-types-for-optimization']
 
   if (!jsSources)
     throw "No javascript sources specified"
@@ -45,6 +46,10 @@ module.exports = function(){
 
   if (typeof virtualDir != 'undefined')
     builder.setVirtualDir(virtualDir)
+
+  if (typeof useTypesForOptimisation != 'undefined')
+    builder.setUseTypesForOptimisation(useTypesForOptimisation)
+  
 
   return builder
 

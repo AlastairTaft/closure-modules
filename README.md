@@ -30,6 +30,8 @@ Stick your module configuration in your package.json under a `"closure-modules"`
   "virtual-dir": "/claims/",
   // Output directory, if omitted defaults to assets
   "output-dir": 'assets'
+  // Optional, defaults to true. If your module code is doing weird things, e.g. variables appear to be being overridden or are not what's expected then set this to false.
+  "use-types-for-optimization": false
 }
 ...
 ```
