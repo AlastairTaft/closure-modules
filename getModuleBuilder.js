@@ -24,6 +24,7 @@ module.exports = function(){
     , externs = options['externs'] || []
     , virtualDir = options['virtual-dir']
     , useTypesForOptimisation = options['use-types-for-optimization']
+    , suppressWarnings = options['suppress-warnings'] || false
 
   if (!jsSources)
     throw "No javascript sources specified"
@@ -49,7 +50,8 @@ module.exports = function(){
 
   if (typeof useTypesForOptimisation != 'undefined')
     builder.setUseTypesForOptimisation(useTypesForOptimisation)
-  
+
+  builder.suppressWarnings(suppressWarnings)  
 
   return builder
 
