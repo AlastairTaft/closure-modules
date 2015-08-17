@@ -12,7 +12,7 @@
   "bin": {
     "generate-closure-modules": "generate-closure-modules.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "debug": "^2.2.0"
   },
   "keywords": [
