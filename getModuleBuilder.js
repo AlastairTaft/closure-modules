@@ -3,8 +3,8 @@
  * a ModuleBuilder instance configured with those settings.
  */
 
- var path = require('path')
-    , ModuleBuilder = require(__dirname + '/lib/ModuleBuilder.js')
+var path = require('path')
+  , ModuleBuilder = require(__dirname + '/lib/ModuleBuilder.js')
   
 module.exports = function(){
 
