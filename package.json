@@ -10,10 +10,13 @@
   },
   "license": "ISC",
   "bin": {
-    "generate-closure-modules": "generate-closure-modules.js"
+    "generate-closure-modules": "generate-closure-modules.js",
+    "run-plovr": "runPlovr.js",
+    "build-deps": "buildDepsFile.js"
   },
   "dependencies": {
-    "debug": "^2.2.0"
+    "debug": "^2.2.0",
+    "node-plovr": "0.0.2"
   },
   "keywords": [
     "closure-compiler",

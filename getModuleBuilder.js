@@ -16,8 +16,6 @@ module.exports = function(){
     var options = require('./parseArgs.js')(process.argv);
   }
 
-  var packageRoot = 'C:/projects/pbx-ui'
-
   var jsSources = options['js-sources']
     , outputDir = options['output-dir'] || 'assets' // Defaults to assets
     , modules = options['modules']
@@ -25,6 +23,7 @@ module.exports = function(){
     , virtualDir = options['virtual-dir']
     , useTypesForOptimisation = options['use-types-for-optimization']
     , suppressWarnings = options['suppress-warnings'] || false
+    , compilationLevel = options['compilation-level'] || 'ADVANCED'
 
   if (!jsSources)
     throw "No javascript sources specified"
@@ -52,6 +51,7 @@ module.exports = function(){
     builder.setUseTypesForOptimisation(useTypesForOptimisation)
 
   builder.suppressWarnings(suppressWarnings)  
+  builder.setCompilationLevel(compilationLevel)
 
   return builder
 

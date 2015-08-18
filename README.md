@@ -53,6 +53,8 @@ Generating the sourcemaps will mean your router will have to play nice serving u
 
 ### Loading modules
 
+In your entry point scripts make sure you add `goog.require('loadModules')` to the top of at least two of your scripts. This is to ensure the loadModules function gets added to the common.js script. In future this will be automated somehow but for now you must add it manually.
+
 Include common.js (this is the shared code that gets generated)
 ```
 <script type="text/JavaScript" src="assets/common.js"></script>
