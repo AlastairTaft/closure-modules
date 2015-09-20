@@ -97,6 +97,10 @@ if (packageJson['closure-modules']){
 }
 
 var outputDir = options['output-dir'] || 'assets' // Defaults to assets
+// Make sure the directory exists
+if (! fs.existsSync(outputDir)){
+  fs.mkdirSync(outputDir)
+}
 
 // We need to first copy over the common.js script and all it should
 // contain is the loading of plovr
