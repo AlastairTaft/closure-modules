@@ -1,3 +1,6 @@
+# ⚠️ Archived
+This repo is not maintained.
+
 This library should make breaking down your compiled closure-library style code into modules easier.
 
 ## How to
